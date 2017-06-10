@@ -2,13 +2,26 @@ import React from 'react';
 import uuid from 'uuid';
 import style from './../App.css';
 import Head from '../components/Title';
-import { Todo, TodoList } from '../components/TodoList';
+import TodoList from '../components/TodoList';
 
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-                data:[]
+            data:[
+                {
+                    id: 1,
+                    text: 'clean room'
+                },
+                {
+                    id: 2,
+                    text: 'wash the dishes'
+                },
+                {
+                    id: 3,
+                    text: 'feed my cat'
+                }
+            ]
         };
     }
     addTodo(val){
