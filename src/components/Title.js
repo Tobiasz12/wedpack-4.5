@@ -9,3 +9,5 @@ import React from 'react';
 }
 
 export default Head;
+
+//style-loader
