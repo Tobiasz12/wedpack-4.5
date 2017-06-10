@@ -1,9 +1,6 @@
 import React from 'react';
 import style from './../TodoList.css';
-
-const Todo = ({todo,remove}) => {
-  return <li onClick={() => {remove(todo.id)}}>{todo.text}</li>;
-}
+import Todo from './Todo.js';
 
 const TodoList = ({todos, remove}) => {
     const todoNode = todos.map((todo) => {
