@@ -42,7 +42,7 @@ module.exports = {
 
 var plugins = [
 new HtmlWebpackPlugin({
-        template: 'src/index.html',
+        template: 'build/index.html',
         filename: 'index.html',
         inject: 'body',
     })
