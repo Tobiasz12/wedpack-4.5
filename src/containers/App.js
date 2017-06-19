@@ -25,12 +25,12 @@ class App extends React.Component {
             ]
         };
     }
-    addTodo(val){
-        const todo = {
+    addTodo2(val){
+        const todo1 = {
             text: val,
             id: uuid.v4(),
         };
-        const data = [...this.state.data, todo];
+        const data = [...this.state.data, todo1];
         this.setState({data});
     }
     removeTodo(id) {
@@ -42,10 +42,10 @@ class App extends React.Component {
         return (
             <div className={style.TodoApp}>
                 <Head />
-                <TodoForm addTodo={this.addTodo.bind(this)}/>
+                <TodoForm addTodo1={this.addTodo2.bind(this)}/>
                 <TodoList
-                 todos={this.state.data}
-                 remove={this.removeTodo.bind(this)}
+                 todos3={this.state.data}
+                 remove2={this.removeTodo.bind(this)}
                />
             </div>
         );
